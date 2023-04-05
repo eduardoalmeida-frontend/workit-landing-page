@@ -1,0 +1,19 @@
+body {
+    background-color: #165;
+    width: 400px;
+    height: 400px;
+    display: table;
+}
+
+#container {
+    background-color: #000000;
+    color: #FFFFFF;
+    left: 50%;
+    top: 50%;
+    margin-left: -100px;
+    margin-top: -50px;
+    position: absolute;
+    width: 210px;
+    height: 100px;
+    padding: 15px 15px 15px 15px;
+}
