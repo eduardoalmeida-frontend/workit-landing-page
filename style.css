@@ -1,19 +1,124 @@
-body {
-    background-color: #165;
-    width: 400px;
-    height: 400px;
-    display: table;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-#container {
-    background-color: #000000;
-    color: #FFFFFF;
-    left: 50%;
-    top: 50%;
-    margin-left: -100px;
-    margin-top: -50px;
+body {
+  overflow-x: hidden;
+  position: relative;
+  font-family: "Manrope", sans-serif;
+}
+
+.wrapper {
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.heading_primary,
+.heading_secondary,
+.heading_third {
+  font-family: "Fraunces", serif;
+  font-weight: 500;
+}
+
+.heading_primary {
+  font-size: 2.986rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.heading_primary strong {
+  border-bottom: 2px solid #44ffa1;
+  font-weight: 500;
+}
+
+.heading_primary--bottom {
+    display: block;
+  }
+
+.header {
+  position: relative;
+  background-color: #24053e;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.986rem 0;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .hero_image {
+    position: relative;
+    width: 100%;
+  }
+  
+  .image {
     position: absolute;
-    width: 210px;
-    height: 100px;
-    padding: 15px 15px 15px 15px;
+    z-index: 2;
+    width: 60%;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .header::after,
+  .section-offerts::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: -3.125rem;
+    width: 100%;
+    height: 6.25rem;
+    border-radius: 0 0 150% 150%;
+    background-color: #24053e;
+  }
+  
+  .decorative {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .decorative--left {
+    top: 50%;
+    left: 0;
+  }
+  
+  .decorative--right {
+    top: 70%;
+    left: 100%;
+  }
+  
+
+.link:link,
+.link:visited {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.link--access {
+  padding-bottom: 2px;
+  color: #ffffff;
+  border-bottom: 2px solid #44ffa1;
+}
+
+.link--cta:link,
+.link--cta:visited {
+  color: #24053e;
+  background-color: #44ffa1;
+  font-weight: 700;
+  padding: 1rem 1.44rem;
+  border: 2px solid #44ffa1;
+  transition: 0.3s;
 }
